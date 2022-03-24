@@ -12,9 +12,37 @@ header{
 
 .banner{
 	background-color: #DCDCDC;
-	height: 200px;
+    height: 200px;
+    display: block;
+    padding-top: 30px;
 }
 
+.banner .image-baner{
+	background-image: url("img/image-baner.png");
+	width: 320px;
+	height: 200px;
+	margin-left: 23%;
+	padding-top: 10px;
+	background-repeat: no-repeat;
+}
+
+.banner .infor{
+	text-align: center;
+	margin-left: 100px;
+	margin-top: -170px;
+}
+
+.infor .textPesquise{
+	color: #696969;
+	font-size:  20px;
+}
+
+.infor .textAzul{
+	color: #0693e3;
+	font-size: 40px;
+	margin-left: 50px;
+	font-family: "Brush Script MT",cursive;
+}
 
 .accordion{
 	width: 60%;
@@ -71,3 +99,17 @@ header{
 	content: '︿';
 	font-size: 30px;
 }
+
+
+
+@media(max-width: 850px){
+	.image-baner{
+		display: none;
+	}
+
+	.banner .infor{
+	text-align: center;
+	margin-top: 50px;
+	}
+}
+
