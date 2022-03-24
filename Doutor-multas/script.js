@@ -8,7 +8,6 @@ function fazGet(url){
 }
 
 function criarLinha(carros){
-	console.log(carros);
 	linha = document.createElement("tr");
 	nome = document.createElement("td")
 	nome.innerHTML = carros.nome
@@ -30,36 +29,6 @@ function main(){
 }
 
 main();
-
-/*var header = document.querySelector('.content');
-var section = document.querySelector('section');
-
-var requestURL = 'https://daniel9821.github.io/veiculosApi/';
-
-var request = new XMLHttpRequest();
-
-request.open('GET', requestURL);
-
-request.responseType = 'json';
-request.send();
-
-request.onload = function() {
-  var veiculos = request.response;
-  populateHeader(veiculos);
-  showHeroes(veiculos);
-}
-
-function populateHeader(jsonObj) {
-  var myH1 = document.createElement('h1');
-  myH1.textContent = jsonObj['veiculosNome'];
-  header.appendChild(myH1);
-
-  var myPara = document.createElement('p');
-  myPara.textContent = 'Hometown: ' + jsonObj['homeTown'] + ' // Formed: ' + jsonObj['formed'];
-  header.appendChild(myPara);
-}
-
-*/
 
 
 // vai criar uma classe com o nome active no accordion que foi clicado
