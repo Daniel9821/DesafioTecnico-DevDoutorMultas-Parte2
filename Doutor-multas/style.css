@@ -1,0 +1,70 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+header{
+	color: #0693e3;
+	text-align: center;
+	padding: 10px;
+}
+
+.banner{
+	background-color: #DCDCDC;
+	height: 200px;
+}
+
+
+.accordion{
+	width: 60%;
+	margin: 20px auto;
+	color:  #000;
+	background-color: #fff;
+	padding: 45px 45px;
+}
+
+.acordion .container{
+	position: relative;
+	margin: 10px 10px;
+}
+
+.accordion .label{
+	background-color: #00008B;
+	border-radius: 5px;
+	margin-bottom: 10px;
+	position: relative;
+	padding: 10px;
+	font-size: 20px;
+	color: #fff;
+	cursor: pointer;
+} 
+
+.accordion .label::before{
+	content: '﹀';
+	color: #fff;
+	position: absolute;
+	top: 50%;
+	right: 5px;
+	font-size: 30px;
+	transform: translateY(-50%);
+}
+
+.accordion .content{
+	position: relative;
+	background: #fff;
+	height: 0;
+	font-size: 20px;
+	text-align: justify;
+	width: 780px;
+	overflow: hidden;
+	transition: 0.5s;
+}
+
+.accordion .container.active .content{
+	height: 100px;
+}
+
+.accordion .container.active .label::before{
+	content: '︿';
+	font-size: 30px;
+}
